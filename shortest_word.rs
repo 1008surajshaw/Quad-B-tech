@@ -1,5 +1,5 @@
 fn shortest_word(input: &str) -> Option<&str> {
-    let mut shortest = None;
+    let mut shortest: Option<&str> = None;
 
     for word in input.split_whitespace() {
         if let Some(shortest_word) = shortest {

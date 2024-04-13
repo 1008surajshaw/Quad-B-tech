@@ -1,9 +1,8 @@
-fn first_occurrence(arr:&[i32],target:i32)->Option<unsize>{
-    for(index,&num) in arr,iter().enumerate() {
+fn first_occurrence(arr: &[i32], target: i32) -> Option<usize> {
+    for (index, &num) in arr.iter().enumerate() {
         if num == target {
             return Some(index);
-
-        } else if num >target  {
+        } else if num > target {
             break;
         }
     }
